@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    
+</head>
+
+
+<body>
+
+<!-- Nav BAR -->
+<section>
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand bg-light navimage" href="index.html" id="navimage">
+        <img src="Assets/Software-Care-1.png" width="50" height="50" class="d-inline-block align-centre" alt="We Soft logo"> 
+      </a>
+    <a href="index.html" class="navbar-brand">WE SOFT</a>
+    <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            height="20px"
+            width="10px">
+
+            
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link"> HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+                <a  onclick="smoothScroll(document.getElementById('abt-us1'))" class="nav-link"> ABOUT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+              <a  onclick="smoothScroll(document.getElementById('9874'))" class="nav-link"> OUR SERVICES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+                <a  href="careers.html" class="nav-link"> CAREERS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+                <a onclick="smoothScroll(document.getElementById('1546'))" class="nav-link"> CONTACT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li id="nav-item-deco">
+              <a <button class="btn btn-primary btn-lg" type="button" href="Account.html" class="nav-link"> Login/Sign Up </a>
+          </li>
+        </ul>
+    </div>
+    </div>
+   </nav>
+
+   <script>
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+   </script>
+  </section>
+
+
+  <div class="container1">
+      <div class="login-container">
+        <h3>Welcome Aboard! This Page Is All For You So We Have Specially Made It All Secure For You!</h3>
+        <!-- form -->
+        <form action="login.php" method="post" autocomplete="off">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="username" name="username" id="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <button type="submit" class="login-button">Sign In</button>
+          <br>
+          <br>
+          <center>
+          <h4 class="text-light">Don't Have An Account? Create Now One For Free <a href="Account.html" class="text-lead"><u>Click here</u></a> </h4>
+          <h4 class="text-light">Forgot The Password? <a href="forgotpassword.html" class="text-lead"><u>Click here</u></a> </h4>
+           </center>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<!-- NFooter -->
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<footer>
+  <div class="container pt-5 border-bottom">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 mb-3 text-center">
+        <a class="navbar-brand" href="index.html" id="navimage">
+          <img src="Assets/Software-Care-1.png" width="250" height="250" class="d-inline-block align-centre" alt="We Soft logo"> 
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-12">
+
+        <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Solutions</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Sales</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Project Management</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Workforce</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"> E-Commerce</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Finance</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Business Apps</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6 p-0 mb-3 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Developers</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://github.com/">Open Source</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://stackshare.io/">Technology</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="www.aboutwesoft.com"></i>About</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://blog.com"></i> Blog</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Connect</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/linkedin.svg" width="30px" height="50px"></i> LinkedIn</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/twitter.svg" width="30px" height="50px"></i> Twitter</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/reddit.svg" width="30px" height="50px"></i> Reddit</a>
+          </li>
+        
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/github.svg" width="30px" height="50px"></i> Github</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/blog.svg" width="30px" height="50px"></i> Blog</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/fb.svg" width="30px" height="50px"></i> Facebook</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/youtube.svg" width="30px" height="50px"></i> Youtube</a>
+          </li>
+        </ul>
+        </div>
+
+      </div>
+        <div class="col-md-12">
+          <div class="py-4 d-flex justify-content-center align-items-center">
+            <a class="mr-4" href="../privacy.html">Privacy & Terms Of Usage</a>
+            <a href="../sitemap.xml">Sitemap</a>
+          </div>
+<center>
+  <div>
+    <p>All Content's © Owned And Reserved By/For Wesoft® | Site Is Hosted And Managed By Wesoft.</p>
+    <u><p>This Website Is Mobile Friendlly, Even Though We Suggest Using In Desktop For Best And seamless Experience.</p></u>
+  </div>
+</center>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script>
+
+let mybutton = document.getElementById("btn-back-to-top");
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+
+    
+</body>
+</html>

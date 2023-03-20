@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Soft</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    
+</head>
+
+
+<body>
+
+<!-- Nav BAR -->
+<section>
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand bg-light navimage" href="index.html" id="navimage">
+        <img src="Assets/Software-Care-1.png" width="50" height="50" class="d-inline-block align-centre" alt="We Soft logo"> 
+      </a>
+    <a href="index.html" class="navbar-brand">WE SOFT</a>
+    <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            height="20px"
+            width="10px">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link"> HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+                <a  onclick="smoothScroll(document.getElementById('abt-us1'))" class="nav-link"> ABOUT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+              <a  onclick="smoothScroll(document.getElementById('9874'))" class="nav-link"> OUR SERVICES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+                <a  href="careers.html" class="nav-link"> CAREERS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item" id="nav-item-deco">
+                <a onclick="smoothScroll(document.getElementById('1546'))" class="nav-link"> CONTACT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li id="nav-item-deco">
+              <a <button class="btn btn-primary btn-lg" type="button" href="Account.html" class="nav-link"> Login/Sign Up </a>
+          </li>
+        </ul>
+    </div>
+    </div>
+   </nav>
+
+   <script>
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+   </script>
+  </section>
+
+
+   <!-- Section 1 -->
+   <section class="bg-dark text-light mt-5 pt-5 pb-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1 class="typo" id="typo">Sometimes <span class="text-warning">Simple</span> Works !</h1>
+                <p class="lead my-4">We Provide The One Stop Solution For All Your Software Needs!
+                Have More Doubts On How Far Can We Go ? </p>
+                <p>
+                Check Out Our Previous Works Here :) 
+                </p>
+                <!-- <a <button class="btn btn-primary btn-lg" type="button"  href="works.html"> Works </button> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a <button onclick="smoothScroll(document.getElementById('1546'))" class="btn btn-primary btn-lg" type="button"> Contact Us </button> </a>
+            </div>
+                <img class="img-fluid w-50  d-sm-block" src="Assets/coding.svg" alt="bg image">
+            
+        </div>
+      </div>
+   </section>
+
+
+   <!-- newsletter subbing -->  
+    <section>
+    <div class="container">
+        <div class="newsletter-popup">
+              <div class="newsletter-popup-container">
+               <a href="#" class="newsletter-popup-close-btn">&times;</a>
+                  <h3><i class="fa-regular fa-envelope"></i>Subscribe To Our Newsletter</h3>
+                  <p>Join our subscribers list to get the latest news, updates, and special offers directly in your inbox.</p>
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                  <p class="newsletter-msg"></p>
+              </div>
+        </div>  
+   </section>
+
+    <script>     //popup windows script for newsletter
+    // Will prevent the popup from reopening when the close button is clicked
+    let keepClosed = false;
+    // Open the newsletter subscription popup
+    const openNewsletterPopup = () => {
+        // Update the style and element properties
+        document.querySelector('.newsletter-popup').style.display = 'flex';
+        document.querySelector('.newsletter-popup').getBoundingClientRect();
+        document.querySelector('.newsletter-popup').classList.add('open');
+        document.querySelector('.newsletter-popup-container').getBoundingClientRect();
+        document.querySelector('.newsletter-popup-container').classList.add('open');
+    };
+    const closeNewsletterPopup = () => {
+        // Revert the element properties
+        document.querySelector('.newsletter-popup').style.display = 'none';
+        document.querySelector('.newsletter-popup').classList.remove('open');
+        document.querySelector('.newsletter-popup-container').classList.remove('open');
+        // Keep it closed!
+        keepClosed = true;
+    };
+    // Get the subscription form
+    const newsletterForm = document.querySelector('.newsletter-popup form');
+    // On submit event handler (submit button is pressed)
+    newsletterForm.onsubmit = event => {
+        event.preventDefault();
+        // Bind the subscription form and execute AJAX request
+        fetch(newsletterForm.action, {
+            method: 'POST',
+            body: new FormData(newsletterForm)
+        }).then(response => response.text()).then(data => {
+            // Output the response
+            document.querySelector('.newsletter-msg').innerHTML = data;
+        });
+    };
+    // Close button onclick event handler
+    document.querySelector('.newsletter-popup-close-btn').onclick = event => {
+        event.preventDefault();
+        // CLose the popup widget
+        closeNewsletterPopup();
+    };
+    // Open the popup widget when the user reaches a specific point while scrolling down
+    document.addEventListener('scroll', () => {
+        // If you want to open the widget further down the page, increase the 400 value
+        if (window.scrollY >= 400 && !keepClosed) {
+            // Open the widget
+            openNewsletterPopup();
+        }
+    });
+    </script>
+
+
+    <!-- Cards -->
+
+<section class="bg-light text-dark pt-5 pb-5 text-center text-sm-start" id="9874">                              <!--Card START Inclusive Of  Carousel-->
+        <div class="container">                                                                       <!-- Container div Start -->
+          <div class="d-sm-flex align-items-center justify-content-between">                          <!-- Class for centering elements -->
+             <h1>WHAT WE <span class="text-warning">PROVIDE ?</span></h1>
+    
+    
+              <div class="bd-example">                                                                      <!-- carousel start-->
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">                 
+              <div class="container">
+              <div class="carousel-inner">
+                     <div class="carousel-item active">                                                                 <!--1st div start--> 
+                     <div class="d-sm-flex align-items-center justify-content-between">                                 <!--2nd div start--> 
+                    <div class="card-deck">       <!-- Card Deck div Start -->
+                    <div class="card">          <!--CARD 1 Start-->
+                        <img class="card-img-top" src="Assets/chatbot.svg" alt="chatbot">
+                        <div class="card-body">
+                          <h5 class="card-title">ChatBot Specialization</h5>
+                          <hr></hr>
+                          <p class="card-text">Chatbots can improve lead generation, qualification and nurturing. 
+                              Chatbots can ask questions throughout the buyer's journey and provide information that may persuade the user and create a lead. 
+                              Chatbots can then provide potential customer information to the sales team, who can engage with the leads.</p>
+                        </div>
+                        <div>
+                          <hr></hr>
+                          <center> <a <button class="btn glow-on-hover text-light" type="button" href="https://www.google.com" > READ MORE > </button></a>  </center>
+                        </div>
+                    </div>                      <!--CARD 1 End-->
+                    <div class="card">          <!--CARD 2 Start-->
+                        <img class="card-img-top" src="Assets/testing.svg" alt="testing">
+                        <div class="card-body">
+                          <h5 class="card-title">Application Testing</h5>
+                          <hr></hr>
+                          <p class="card-text">Software testing is imperative, as it identifies any issues and defects with the written code so they can be fixed before the software product is delivered. 
+                              Improves product quality. When it comes to customer appeal, delivering a quality product is an important metric to consider.</p>
+                        </div>
+                        <div>
+                          <hr></hr>
+                          <center> <a <button class="btn glow-on-hover text-light " type="button" href="https://www.youtube.com" > READ MORE > </button></a>  </center>
+                        </div>
+                    </div>                      <!--CARD 2 End-->
+                    <div class="card">          <!--CARD 3 Start-->
+                        <img class="card-img-top" src="Assets/fsd.svg" alt="fsd">
+                        <div class="card-body">
+                          <h5 class="card-title">Full Stack Development</h5>
+                          <hr></hr>
+                          <p class="card-text">One of the major advantages of having a website is that it is accessible to anyone, anywhere, anytime. 
+                              Even during non-business hours, customers can access your website and avail your services or get the information they need, which is why a website is important in business.</p>
+                        </div>
+                        <div>
+                          <hr></hr>
+                          <center> <a <button class="btn glow-on-hover text-light " type="button" href="https://www.instagram.com" > READ MORE > </button></a>  </center>
+                        </div>
+                    </div>                      <!--CARD 3 End-->
+                    </div>                      <!-- Card Deck div end -->
+                     </div>                                                                                               <!--2nd div end--> 
+                     </div>                                                                                               <!--1st div end--> 
+
+
+
+                          <div class="carousel-item">                                                                      <!--3rd div start-->
+                          <div class="d-sm-flex align-items-center justify-content-between">                               <!--4th div start--> 
+                            <div class="card-deck">                                                                        <!--5th div start-->
+                              <div class="card">         <!--CARD 5 Start-->
+                                <img class="card-img-top" src="Assets/AD.svg" alt="chatbot">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mobile Application</h5>
+                                  <hr></hr>
+                                  <p class="card-text">Applications have made it easier for businesses to access operations , anytime and anywhere. 
+                                    There are businesses that rely on applications for all their conversions and interactions.
+                                  </p>
+                                </div>
+                                <div>
+                                  <hr></hr>
+                                  <center> <a <button class="btn glow-on-hover text-light" type="button" href="https://www.searchengineoptimization.com" > READ MORE > </button></a>  </center>
+                                </div>
+                              </div>                     <!--CARD 5 End-->
+                              <div class="card">         <!--CARD 5 Start-->
+                                          <img class="card-img-top" src="Assets/SEO.svg" alt="testing">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Search Engine Optimization</h5>
+                                            <hr></hr>
+                                            <p class="card-text">Search Engine Optimization (SEO) makes your website more visible, and that means more traffic and more opportunities to convert prospects into customers.
+                                            </p>
+                                          </div>
+                                          <div>
+                                            <hr></hr>
+                                            <center> <a <button class="btn glow-on-hover text-light " type="button" href="https://www.digitalmarketing.com" > READ MORE > </button></a>  </center>
+                                          </div>
+                              </div>                     <!--CARD 5 End-->
+                              <div class="card">         <!--CARD 6 Start-->
+                                                <img class="card-img-top" src="Assets/DM.svg" alt="fsd">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Digital Marketing</h5>
+                                                  <hr></hr>
+                                                  <p class="card-text">Digital marketing helps you reach a larger audience than you could through traditional methods and target the prospects who are most likely to buy your product or service.
+                                                     </p>
+                                                </div>
+                                                <div>
+                                                  <hr></hr>
+                                                  <center> <a <button class="btn glow-on-hover text-light " type="button" href="https://www.instagram.com" > READ MORE > </button></a>  </center>
+                                                </div>  
+                              </div>                     <!--CARD 6 End-->
+                          </div>                                                                                             <!--5th div end--> 
+                          </div>                                                                                             <!--4th div end--> 
+                          </div>                                                                                              <!--3rd div end--> 
+                  
+                  </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon mundake h-50 mr-80" aria-hidden="false"></span>
+                 </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon hindake h-50 mr-80" aria-hidden="false"></span>
+                 </a>
+                 
+</div>
+</div>
+</div>
+</div>                   <!-- carousel end-->
+</div>                   <!-- end of Class for centering elements -->
+</div>                   <!-- Container div end -->
+</section>               <!-- Card END Inclusive Of  Carousel-->
+
+
+    <!-- who we are -->
+    <section class="bg-dark text-light pt-5 pb-5 text-center text-sm-center" id="abt-us1">
+      <div class="container">
+      <h1><u>WHO <span class="text-warning">WE</span> ARE ?</u></h1>
+      
+ 
+                  <div class="pt-5 pb-5 text-center text-sm-start">
+                      <center><h2 class="text-danger"> A SECRET! </h2><h4><span class="text-secondary">We Know You Don't Care At All :) Even Though We Had To Put Our Development Team On Work,So We Made This Section</span></h4></center>
+                       <center><h2 class="text-danger"> JUST KIDDING! We Know You Have That Doubt In Your Mind!</h2></center>
+                      <div class="d-sm-flex align-items-center justify-content-between">
+                          <h3>We are highly passionate and energetic online business development and digital marketing agency
+                          that help your business reach new horizons by building your online presence.
+                          consistently work towards growing client's businesses with customised and value for money business.</h3>
+                   <img class="img-fluid w-50 d-sm-block" src="Assets/browsing.svg" alt="browsing" id="who-we-are-image">                 <!-- add "d-none" in class if we want to hide the images in lower resolutions devices  -->
+                      </div>
+                  </div>
+      <hr></hr>
+      </div>
+  </section>
+
+
+    <!-- Review section -->
+
+  <section>
+    <div class="bg-dark text-light text-center text-sm-center pt-5 pb-5">
+      <div class="container"
+       <center><h1 class="text-primary"><u><i>WHAT OTHER'S SAY ABOUT US?</i></u></h1></center>
+       <div class="pt-5 pb-5 text-center text-sm-start">
+           <center><h2 class="text-light">A Genuine Product Always Will Have A Genuine And Un-Biased Reviews.</h2></center>
+        </div>
+      
+<div class="what-say">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="testimonial-slider" class="owl-carousel">
+
+            <div class="testimonial">
+              <img src="Assets/male avatar.svg" width="100" height="100" class="d-inline-block align-centre" alt="John-Profile-pic" id="review-pro-avatar"> 
+              <h3 class="title">John</h3>
+              <span class="post">- Uolo Tech</span>
+              <div class="testimonial-content">
+                <div class="testimonial-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="description">
+                  WeSoft Helped us a lot in website  development.
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <img src="Assets/female avatar.svg" width="100" height="100" class="d-inline-block align-centre" alt="John-Profile-pic" id="review-pro-avatar"> 
+              <h3 class="title">Kelly</h3>
+              <span class="post">- Infotech</span>
+              <div class="testimonial-content">
+                <div class="testimonial-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="description">
+                  Thanks to WeSoft for making our job easier and helping us to focus on more important works. Their pricing were also affordable.
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <img src="Assets/male avatar.svg" width="100" height="100" class="d-inline-block align-centre" alt="John-Profile-pic" id="review-pro-avatar"> 
+              <h3 class="title">Bryan</h3>
+              <span class="post">- Family Soft</span>
+              <div class="testimonial-content">
+                <div class="testimonial-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="description">
+                  Awesome service.
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <img src="Assets/male avatar.svg" width="100" height="100" class="d-inline-block align-centre" alt="John-Profile-pic" id="review-pro-avatar"> 
+              <h3 class="title">Peter</h3>
+              <span class="post">- Utron</span>
+              <div class="testimonial-content">
+                <div class="testimonial-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="description">
+                   Utron Family owe's a special thanks to We Soft team and thier proffesional work.which helped out team a lot,thanks for the tl and i am looking forward to work with them again in near future.
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <img src="Assets/female avatar.svg" width="100" height="100" class="d-inline-block align-centre" alt="John-Profile-pic" id="review-pro-avatar"> 
+              <h3 class="title">Jully</h3>
+              <span class="post">- Jully Services .co</span>
+              <div class="testimonial-content">
+                <div class="testimonial-icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="description">
+                  Definetly lookgin forward to work agani with Wesot.Thier services were excellent and quality of the work is simply up to the top notch mark.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End What-Customer-Say Section-->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#testimonial-slider").owlCarousel({
+            items:2,
+            itemsDesktop:[1000,3],
+            itemsDesktopSmall:[980,2],
+            itemsTablet:[768,2],
+            itemsMobile:[650,1],
+            pagination:false,
+            navigation:false,
+            slideSpeed:1000,
+            autoPlay:true
+        });
+    });
+</script>
+</div>
+    </div>
+  
+</section>
+
+
+
+<!-- Why Choose us -->
+  <section class="bg-light text-dark text-center text-sm-center pt-5 pb-5">
+  <h1 class="text-danger pt-10"><u>Why Choose Us ?</u></h1>
+  <div class="container">
+      <div class="text-sm-start">
+        <p class="textual">At WeSoft We provide service that make difference in the world, we are committed to supporting our customers attain their goals,
+           to personalizing their event experiences, to providing innovative surroundings.</p>
+           <img class="img-fluid float-left w-50 d-none d-sm-block pt-5" src="Assets/ychooseus.svg" alt="browsing">
+
+   
+<section><center><u class="text-primary"><h1>WE FOCUS ON:</h1></u></center></section><br>
+
+<section>
+<div class="card-deck" id="ca-de-deco">
+<div class="card">
+   <div class="card-body">
+      <h5 class="card-title text-success ca-ttle">Technology</h5>
+      <hr></hr>
+      <p class="card-text ca-textual">Team WeSoft have built a massive pool of knowledge having experience in modern technologies.
+         we adopt a progressive approach to technology and marketing techniques.</p>
+        </div>
+      </div>
+
+
+<div class="card">
+   <div class="card-body">
+      <h5 class="card-title text-success ca-ttle">Solutions</h5>
+      <hr></hr>
+      <p class="card-text ca-textual">Professionals Here At WeSoft always analyze the problem from depth and implements correct strategies to find the solution of the particular problem.</p>
+    </div>
+  </div>
+</div>
+</section><br>
+
+<section>
+<div class="card-deck" id="ca-de-deco">
+<div class="card">
+  <div class="card-body">
+     <h5 class="card-title text-success ca-ttle">Client Satisfaction</h5>
+     <hr></hr>
+     <p class="card-text ca-textual">With our strong sense of identification with client projects we value and promote seamless interaction with clients own teams, 
+      and ensure the best value is obtained from their budget.</p>
+   </div>
+  </div>
+
+<div class="card">
+  <div class="card-body">
+     <h5 class="card-title text-success ca-ttle">Innovation</h5>
+     <hr></hr>
+     <p class="card-text ca-textual">WeSoft's IT and digital expertise focused on developing digital excellence and always try to innovate new for our clients happiness.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Contact Us Section -->
+<div id="1546">
+<section class="text-light imgslider">
+  <div><h1 class="text-sm-center text-center text-warning"><u><i><b>CONTACT US</b></i></u></h1></div> <br>
+<p class="text-sm-center lead bold font-weight-bold">Do You Have Any Questions? Please Do Not Hesitate To Contact Us Directly.<br> Our Team Will Come Back To You Within
+  A Matter Of Hours To Help You.</p> <br>
+  <div class="row">
+
+      <!--Grid column-->
+     
+      <div class="container col-md-9 mb-md-0 mb-5 justify-content-between">
+          <form action="pro.php" method="POST">
+              <div class="form-group">
+                  <label>Name:</label>
+                  <input type="text" name="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label>Email:</label>
+                  <input type="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label>Message:</label>
+                  <textarea class="form-control" name="message" required></textarea>
+              </div>
+              <div class="form-group" id="btn-pd">
+                  <button class="btt tt" type="submit">Submit</button>
+              </div>
+          </form>
+  </div>
+
+
+          
+
+      
+
+        <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Karnataka, CA 12345, INDIA</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+91 23456789</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contact@wesoft.rf.gd</p>
+              </li>
+          </ul>
+        </div>
+   
+
+
+
+  </div>
+</section>
+
+
+
+
+
+  
+
+
+
+<!-- NFooter -->
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<footer>
+  <div class="container pt-5 border-bottom">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 mb-3 text-center">
+        <a class="navbar-brand" href="index.html" id="navimage">
+          <img src="Assets/Software-Care-1.png" width="250" height="250" class="d-inline-block align-centre" alt="We Soft logo"> 
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-12">
+
+        <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Solutions</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Sales</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Project Management</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Workforce</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"> E-Commerce</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Finance</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Business Apps</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6 p-0 mb-3 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Developers</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://github.com/">Open Source</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://stackshare.io/">Technology</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="www.aboutwesoft.com"></i>About</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://blog.com"></i> Blog</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+          <h5 class="mb-4 font-weight-bold text-uppercase">Connect</h5>
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/linkedin.svg" width="30px" height="50px"></i> LinkedIn</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/twitter.svg" width="30px" height="50px"></i> Twitter</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/reddit.svg" width="30px" height="50px"></i> Reddit</a>
+          </li>
+        
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/github.svg" width="30px" height="50px"></i> Github</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/blog.svg" width="30px" height="50px"></i> Blog</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/fb.svg" width="30px" height="50px"></i> Facebook</a>
+          </li>
+
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+            <a href="https://www.linkedin.com/"> <img src="Assets/SM/youtube.svg" width="30px" height="50px"></i> Youtube</a>
+          </li>
+        </ul>
+        </div>
+
+      </div>
+        <div class="col-md-12">
+          <div class="py-4 d-flex justify-content-center align-items-center">
+            <a class="mr-4" href="../privacy.html">Privacy & Terms Of Usage</a>
+            <a href="../sitemap.xml">Sitemap</a>
+          </div>
+<center>
+        <div>
+          <p>All Content's © Owned And Reserved By/For Wesoft® | Site Is Hosted And Managed By Wesoft.</p>
+          <u><p>This Website Is Mobile Friendlly, Even Though We Suggest Using In Desktop For Best And seamless Experience.</p></u>
+        </div>
+</center>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script>
+
+let mybutton = document.getElementById("btn-back-to-top");
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

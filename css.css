@@ -1,0 +1,860 @@
+body::before{
+    display:block;
+    content:'';
+    height:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px)
+{
+    .news-input-box{
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glow-on-hover {
+    width: 135px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+   
+  }
+  
+  .glow-on-hover:before {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  
+  
+  }
+  
+  .glow-on-hover:active {
+    color: #000;
+  
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+
+  a:link {
+    text-decoration: none;
+    text-align: center;
+         }
+a:hover {
+    text-decoration: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+    .typo {
+      border-right: solid 4px white;
+      white-space: nowrap;
+      overflow:hidden;  
+      position:sticky;
+      animation: animated-text 2s steps(29,end) 1s infinite ,
+      animated-cursor 900ms steps(29,end) infinite;
+      animation-duration: 9000;
+    }
+
+    @keyframes animated-text{
+      from{width: 0;}
+      to{width: 101%;}
+    }
+    
+    /* cursor animations */
+    
+    @keyframes animated-cursor{
+      from{border-right-color: white;}
+      to{border-right-color: transparent;}
+    } 
+
+
+
+
+
+
+
+
+
+
+
+    .what-say {
+      background: none !important;
+      padding-top: 50px !important;
+      padding-bottom: 0px;
+      padding-top: 0%;
+      margin-top: 0%;
+  }
+  
+  .testimonial {
+      margin: 0 50px 40px;
+  }
+  
+  .testimonial .testimonial-content {
+      padding: 35px 25px 35px 50px;
+      margin-bottom: 35px;
+      background: #fff;
+      position: relative;
+  }
+  
+  .testimonial .testimonial-content:before {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      border-top: 15px solid #718076;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+  }
+  
+  .testimonial .testimonial-content:after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      border-top: 15px solid #718076;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+  }
+  
+  .testimonial-content .testimonial-icon {
+      width: 50px;
+      height: 45px;
+      background: #0CCA4A;
+      text-align: center;
+      font-size: 22px;
+      color: #fff;
+      line-height: 42px;
+      position: absolute;
+      top: 37px;
+      left: -19px;
+  }
+  
+  .testimonial-content .testimonial-icon:before {
+      content: "";
+      border-bottom: 16px solid #05A739;
+      border-left: 18px solid transparent;
+      position: absolute;
+      top: -16px;
+      left: 1px;
+  }
+  
+  .testimonial .description {
+      font-size: 15px;
+      font-style: italic;
+      color: #8a8a8a;
+      line-height: 23px;
+      margin: 0;
+  }
+  
+  .testimonial .title {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      margin: 0 0 5px 0;
+  }
+  
+  .testimonial .post {
+      display: block;
+      font-size: 14px;
+      color: #0CCA4A;
+  }
+  
+  .owl-theme .owl-controls {
+      margin-top: 20px;
+  }
+  
+  .owl-theme .owl-controls .owl-page span {
+      background: #ccc;
+      opacity: 1;
+      transition: all 0.1s ease 0s;
+  }
+  
+  .owl-theme .owl-controls .owl-page.active span,
+  .owl-theme .owl-controls.clickable .owl-page:hover span {
+      background: #0CCA4A;
+  }
+
+  #review-pro-avatar{
+    background-color: white;
+    border-radius: 100%;
+  }
+
+
+
+
+
+
+
+
+  
+
+  .mundake{
+    background-color: rgba(0, 0, 0, 0.475);
+    height: 50%;
+    margin-right: 80%;
+  }
+  .hindake{
+    background-color: rgba(0, 0, 0, 0.475);
+    height: 50%;
+    margin-left: 80%;
+  }
+
+  
+
+
+
+  .textual{
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 50px;
+  }
+
+  .ca-textual{
+    text-align: center;
+    font-size: large;
+  }
+
+
+  .ca-ttle{
+    text-align: center;
+    font-size: x-large;
+  }
+
+
+
+
+
+
+
+
+  .newsletter-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    transition: all .3s ease;
+  }
+  .newsletter-popup .newsletter-popup-container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    width: 500px;
+    transform: scale(0.3);
+    transition: all .3s ease;
+  }
+  .newsletter-popup .newsletter-popup-container.open {
+    transform: scale(1);
+  }
+  .newsletter-popup .newsletter-popup-container h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 0 10px;
+    color: #4d5561;
+  }
+  .newsletter-popup .newsletter-popup-container h3 i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #4d5561;
+    color: #fff;
+    margin-right: 10px;
+  }
+  .newsletter-popup .newsletter-popup-container p {
+    margin: 0;
+    padding: 15px 0;
+    color: #8d9092;
+  }
+  .newsletter-popup .newsletter-popup-container form {
+    display: flex;
+    padding: 15px 0 10px;
+  }
+  .newsletter-popup .newsletter-popup-container form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  .newsletter-popup .newsletter-popup-container form input::placeholder {
+    color: #8d9092;
+  }
+  .newsletter-popup .newsletter-popup-container form button {
+    width: 200px;
+    appearance: none;
+    background-color: #4d5561;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+  .newsletter-popup .newsletter-popup-container form button:hover {
+    background-color: #424953;
+  }
+  .newsletter-popup .newsletter-popup-container .newsletter-popup-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 30px;
+    line-height: 20px;
+  }
+  .newsletter-popup .newsletter-popup-container .newsletter-popup-close-btn:hover {
+    color: #c4c4c4;
+  }
+  .newsletter-popup .newsletter-popup-container .newsletter-msg {
+    padding: 5px 0;
+  }
+  .newsletter-popup.open {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .send-newsletter-form {
+    background-color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .send-newsletter-form h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eceff2;
+    color: #6a737f;
+    font-weight: 600;
+    background-color: #f9fbfc;
+  }
+  .send-newsletter-form h1 i {
+    padding-right: 10px;
+    font-size: 24px;
+  }
+  .send-newsletter-form .fields {
+    position: relative;
+    padding: 20px;
+  }
+  .send-newsletter-form input[type="text"] {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #dfe0e0;
+    width: 100%;
+    outline: 0;
+    font-size: 14px;
+  }
+  .send-newsletter-form input[type="text"]:focus {
+    border: 1px solid #c6c7c7;
+  }
+  .send-newsletter-form textarea {
+    resize: none;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #dfe0e0;
+    width: 100%;
+    height: 150px;
+    outline: 0;
+    font-size: 14px;
+  }
+  .send-newsletter-form textarea:focus {
+    border: 1px solid #c6c7c7;
+  }
+  .send-newsletter-form input[type="submit"] {
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+    border: 0;
+    background-color: #cb5f51;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+  }
+  .send-newsletter-form input[type="submit"]:hover {
+    background-color: #c15b4d;
+  }
+  .send-newsletter-form input[type="submit"]:disabled {
+    background-color: #999999;
+  }
+  .send-newsletter-form .field {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .send-newsletter-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e939b;
+  }
+  .send-newsletter-form .responses {
+    padding: 0;
+    margin: 0;
+  }
+  .send-newsletter-form .multi-select-list {
+    border: 1px solid #dfe0e0;
+    margin: 15px 0;
+    overflow-y: auto;
+    max-height: 150px;
+  }
+  .send-newsletter-form .multi-select-list label {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .send-newsletter-form .multi-select-list label input {
+    margin-right: 15px;
+  }
+  .send-newsletter-form .multi-select-list label:last-child {
+    border-bottom: 0;
+  }
+
+
+
+
+  .sub-btn1:active{
+    background-color: #000;
+  }
+
+  .sub-btn1:hover{
+    border-radius: 15px;
+    background-color:transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    font-family: Rubik,Arial,sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      overflow-x: hidden;
+      color: #607289;
+  }
+  
+  h5 {
+      font-size: 1rem;
+      line-height: 1.375;
+    font-family: Rubik,Arial,sans-serif;
+      font-weight: 500;
+      color: #030929;
+  }
+  
+  a {
+    color: #818494;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  a:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer {
+    background: #ebf4fa;
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  .navimage:hover{
+    margin-top: 30px;
+    transform: scale(5);
+    border-radius:100%;
+    margin-right: 120px;
+
+  }
+
+
+  .nav-item:hover{
+    transform: scale(1.5);
+    transition:0.5s all ease-in-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#who-we-are-image
+{
+animation:who-we-are-image-keyf  5s infinite;
+}
+@keyframes who-we-are-image-keyf {
+  0%{
+    transform:perspective(400px) scaleX(1);
+  }
+  50%{
+    transform:perspective(400px) scaleX(-1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imgslider{
+  width:auto;
+  height:auto;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image:url("Assets/sld/4.webp");
+  animation:changeImage 20s infinite;
+  background-position:center;
+}
+
+
+@keyframes changeImage{
+  0%{
+    background-image:url("Assets/sld/1.webp");
+  }
+  25%{
+    background-image:url("Assets/sld/2.webp");
+  }
+  50%{
+    background-image:url("Assets/sld/3.webp");
+  }
+  75%{
+    background-image:url("Assets/sld/4.webp");
+  }
+  100%{
+    background-image:url("Assets/sld/1.webp");
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#btn-pd{
+  padding-top: 5%;
+}
+
+.btt {
+border: 3px solid white;
+color:white;
+font-size: 20px;
+background: transparent;
+width: 200px;
+text-transform: uppercase;
+text-align: center;
+height: 60px;
+background-color: transparent;
+background-position: right bottom;
+}
+
+.btt:hover {
+  background-position: left bottom;
+  background: linear-gradient(to right,black 50%, white 50%);
+  background-size: 200% 100%;
+  transition: all .5s ease-out;
+}
+
+.tt {
+  text-align: center;
+  font-size: 16px;
+  color:white;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.tt:hover {
+  color: white; 
+}
+
+
+.a:hover{
+  transition: background-position 275ms infinite;
+}
+.a {
+  background-position: 0 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+.bg-image-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://wallpaperaccess.com/full/2425075.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: hsla(40, 100%, 6%, 0.6);
+  padding: 5rem 3rem;
+  width: 50%;
+  min-width: 40rem;
+  max-width: 60rem;
+  border-radius: 1rem;
+}
+
+.login-container h3 {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.input-group label {
+  color: white;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.input-group input {
+  font-size: 2rem;
+  padding: 0.1rem 0.25rem;
+  background-color: hsla(40, 100%, 91%, 0.3);
+  border: 1px solid hsl(40, 100%, 6%);
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: lighter;
+}
+
+.input-group input:focus {
+  border: 1px solid hsl(40, 100%, 50%)
+}
+
+.login-button {
+  padding: 1rem 3rem;
+  width: 100%;
+  border-radius: 5px; 
+  background-color: hsla(40, 100%, 50%, 0.1);
+  border: 1px solid hsl(40, 100%, 50%);
+  outline: none;
+  font-size: 2rem;
+  color: white;
+  font-weight: lighter;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: hsla(40, 100%, 50%, 0.3)
+}
+
+.login-button:focus {
+  background-color: hsla(40, 100%, 50%, 0.5)
+}
+
+
+
+
+
